@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Analytics\Analyzer.cs" />
     <Compile Include="Analytics\MaxMistaceAnalizator.cs" />
+    <Compile Include="Analytics\MistakeExpectedValueAnaliser.cs" />
     <Compile Include="IWeatherProvider.cs" />
     <Compile Include="ObservationHistory.cs" />
     <Compile Include="DayliObservation.cs" />

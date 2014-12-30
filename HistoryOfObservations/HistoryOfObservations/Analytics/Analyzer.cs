@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HistoryOfObservations.Analytics
 {
-    class Analyzer
+    public class Analyzer
     {
         public ObservationHistory History ;
 

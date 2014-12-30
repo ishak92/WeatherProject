@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MaxMistaceAnalizatorTest.cs" />
+    <Compile Include="MistakeExpectedValueAnaliserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitWeatherTest.cs" />
   </ItemGroup>

@@ -75,7 +75,7 @@ namespace TestProject
         {
             var history = new ObservationHistory();
             var initData = new DateTime(2014, 12, 1);
-            var constMistakeWeatherGenerator = new ConstantMistakenWeatherProvider();
+            var constMistakeWeatherGenerator = new ConstantMistakenWeatherProvider(5);
             for (int i = 0; i < 12; i++)
             {
                 history.AddObservation(initData.AddDays((i)), constMistakeWeatherGenerator.GetDayliObservation());
@@ -89,10 +89,10 @@ namespace TestProject
             var TenDayMaxMistake = maxMistakeAnalyzer.GetMaximumMistaceForNDayPrediction(10);
 
 
-            Assert.AreEqual(1, OneDayMaxMistake);
-            Assert.AreEqual(3, ThreeDayMaxMistake);
-            Assert.AreEqual(7, SevenDayMaxMistake);
-            Assert.AreEqual(10, TenDayMaxMistake);
+            Assert.AreEqual(5, OneDayMaxMistake);
+            Assert.AreEqual(5, ThreeDayMaxMistake);
+            Assert.AreEqual(5, SevenDayMaxMistake);
+            Assert.AreEqual(5, TenDayMaxMistake);
 
         }
     }
