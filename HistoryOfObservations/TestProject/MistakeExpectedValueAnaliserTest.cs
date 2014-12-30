@@ -26,12 +26,14 @@ namespace TestProject
                 history.AddObservation(initData.AddDays((i+1)), constMistakeWeatherGenerator2.GetDayliObservation());
             }
             history.AddObservation(initData.AddDays((20)), constMistakeWeatherGenerator1.GetDayliObservation());
-            var MistakeExpectedValue = new MistakeExpectedValueAnaliser(history);
+            var mistakeExpectedValue = new MistakeExpectedValueAnaliser(history);
 
 
-            var OneDayPredictionMistakeExpectedValue = MistakeExpectedValue.GetMistakeExpectedValue(1);
+            var oneDayPredictionMistakeExpectedValue = mistakeExpectedValue.GetMistakeExpectedValue(1);
+            var tenDayPredictionMistakeExpectedValue = mistakeExpectedValue.GetMistakeExpectedValue(10);
 
-            Assert.AreEqual(1.5, OneDayPredictionMistakeExpectedValue);
+            Assert.AreEqual(1.5, oneDayPredictionMistakeExpectedValue);
+            Assert.AreEqual(1.5, tenDayPredictionMistakeExpectedValue);
         }
     }
 }
