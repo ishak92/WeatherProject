@@ -43,7 +43,7 @@ Temporary Items
 .apdisk
 
 #vsyakiyShlack
-.dll
-.exe
-.pdb
-.cache
+*.dll
+*.exe
+*.pdb
+*.cache
