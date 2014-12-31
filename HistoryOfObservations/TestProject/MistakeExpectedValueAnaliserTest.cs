@@ -30,10 +30,23 @@ namespace TestProject
 
 
             var oneDayPredictionMistakeExpectedValue = mistakeExpectedValue.GetMistakeExpectedValue(1);
-            var tenDayPredictionMistakeExpectedValue = mistakeExpectedValue.GetMistakeExpectedValue(10);
 
             Assert.AreEqual(1.5, oneDayPredictionMistakeExpectedValue);
-            Assert.AreEqual(1.5, tenDayPredictionMistakeExpectedValue);
+        }
+
+        [TestMethod]
+        public void YandexProviderTest()
+        {
+            var provider = new YandexWeatherProvider();
+            var dayliObs = provider.GetDayliObservation();
+
+            Assert.AreEqual(dayliObs.GetRealTempOfNoon(), -12);
+            Assert.AreEqual(dayliObs.GetPrediction(1), 1);
+            Assert.AreEqual(dayliObs.GetPrediction(3), 2);
+            Assert.AreEqual(dayliObs.GetPrediction(7), -18);
+            Assert.AreEqual(dayliObs.GetPrediction(10), -5);
+
+
         }
     }
 }

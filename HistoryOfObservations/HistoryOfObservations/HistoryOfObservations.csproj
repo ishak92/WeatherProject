@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\lib\HtmlAgilityPack\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ConstantMistakenWeatherProvider.cs" />
     <Compile Include="Providers\RandomWeatherProvider.cs" />
+    <Compile Include="Providers\YandexWeatherProvider.cs" />
     <Compile Include="ThreeTempStamps.cs" />
     <Compile Include="WeatherExceptions.cs" />
   </ItemGroup>
