@@ -53,6 +53,7 @@
     <Compile Include="Providers\ConstantMistakenWeatherProvider.cs" />
     <Compile Include="Providers\RandomWeatherProvider.cs" />
     <Compile Include="Providers\YandexWeatherProvider.cs" />
+    <Compile Include="TempInterval.cs" />
     <Compile Include="ThreeTempStamps.cs" />
     <Compile Include="WeatherExceptions.cs" />
   </ItemGroup>

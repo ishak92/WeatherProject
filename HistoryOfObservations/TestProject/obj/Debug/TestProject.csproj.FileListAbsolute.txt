@@ -7,3 +7,15 @@ C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObserv
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HistoryOfObservations_Accessor.pdb
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.dll
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\TestProject.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\TestProject.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HistoryOfObservations.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HistoryOfObservations.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HistoryOfObservations_Accessor.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HistoryOfObservations_Accessor.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.pdb

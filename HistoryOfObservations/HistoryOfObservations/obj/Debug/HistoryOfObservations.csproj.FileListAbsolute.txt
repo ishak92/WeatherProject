@@ -2,3 +2,10 @@ C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObserv
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HistoryOfObservations.pdb
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\HistoryOfObservations\obj\Debug\HistoryOfObservations.dll
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\HistoryOfObservations\obj\Debug\HistoryOfObservations.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HistoryOfObservations.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HistoryOfObservations.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\obj\Debug\HistoryOfObservations.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\obj\Debug\HistoryOfObservations.pdb

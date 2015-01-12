@@ -12,14 +12,44 @@ namespace HistoryOfObservations.Providers
 {
     class YandexWeatherProvider:IWeatherProvider
     {
-        private string getYandexWeatherPageHTML()
+
+        private string YandexWeatherURL;
+
+        public YandexWeatherProvider()
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://m.pogoda.yandex.ru/?mode=short");
+            YandexWeatherURL = "https://m.pogoda.yandex.ru/?mode=short";
+        }
+        public YandexWeatherProvider(string url)
+        {
+            YandexWeatherURL = url;
+        }
+
+        private string getYandexWeatherPageHTMLFromHTTP()
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(YandexWeatherURL);
             httpWebRequest.Method = "GET";
             var Response = (HttpWebResponse)httpWebRequest.GetResponse();
             var steam = Response.GetResponseStream();
             var reader = new StreamReader(steam, Encoding.GetEncoding(Response.CharacterSet));
             return reader.ReadToEnd();
+        }
+
+        private string getYandexWeatherPageHTMLFromFILE()
+        {
+            var httpWebRequest = (FileWebRequest)WebRequest.Create(YandexWeatherURL);
+            httpWebRequest.Method = "GET";
+            var Response = (FileWebResponse)httpWebRequest.GetResponse();
+            var steam = Response.GetResponseStream();
+            var reader = new StreamReader(steam);
+            return reader.ReadToEnd();
+        }
+
+        private string getYandexWeatherPageHTML()
+        {
+            if (YandexWeatherURL.Contains("https:"))
+                return getYandexWeatherPageHTMLFromHTTP();
+            else
+                return getYandexWeatherPageHTMLFromFILE();
         }
 
         public DayliObservation GetDayliObservation()

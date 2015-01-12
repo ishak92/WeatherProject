@@ -37,13 +37,13 @@ namespace TestProject
         [TestMethod]
         public void YandexProviderTest()
         {
-            var provider = new YandexWeatherProvider();
+            var provider = new YandexWeatherProvider("file:///C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestData/Yandex/Day1/1.html");
             var dayliObs = provider.GetDayliObservation();
 
-            Assert.AreEqual(dayliObs.GetRealTempOfNoon(), -12);
-            Assert.AreEqual(dayliObs.GetPrediction(1), 1);
-            Assert.AreEqual(dayliObs.GetPrediction(3), 2);
-            Assert.AreEqual(dayliObs.GetPrediction(7), -18);
+            Assert.AreEqual(dayliObs.GetRealTempOfNoon(), -1);
+            Assert.AreEqual(dayliObs.GetPrediction(1), -1);
+            Assert.AreEqual(dayliObs.GetPrediction(3), 0);
+            Assert.AreEqual(dayliObs.GetPrediction(7), -2);
             Assert.AreEqual(dayliObs.GetPrediction(10), -5);
 
 
