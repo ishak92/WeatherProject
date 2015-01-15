@@ -50,10 +50,11 @@
     <Compile Include="ObservationHistory.cs" />
     <Compile Include="DayliObservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\ConstantMistakenWeatherProvider.cs" />
+    <Compile Include="Providers\ConstantMistakenAndConstantRangeWeatherProvider.cs" />
     <Compile Include="Providers\RandomWeatherProvider.cs" />
     <Compile Include="Providers\YandexWeatherProvider.cs" />
     <Compile Include="TempInterval.cs" />
+    <Compile Include="ThreeTempIntervalStamps.cs" />
     <Compile Include="ThreeTempStamps.cs" />
     <Compile Include="WeatherExceptions.cs" />
   </ItemGroup>

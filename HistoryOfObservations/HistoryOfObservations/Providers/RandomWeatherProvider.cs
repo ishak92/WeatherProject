@@ -18,11 +18,11 @@ namespace HistoryOfObservations.Providers
 
         public DayliObservation GetDayliObservation()
         {
-            var realTemp = new ThreeTempStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
-            var TomorrowPredict = new ThreeTempStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
-            var ThreeDayPredict = new ThreeTempStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
-            var SevenDayPredict = new ThreeTempStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
-            var TenDayPredict = new ThreeTempStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
+            var realTemp = new ThreeTempIntervalStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
+            var TomorrowPredict = new ThreeTempIntervalStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
+            var ThreeDayPredict = new ThreeTempIntervalStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
+            var SevenDayPredict = new ThreeTempIntervalStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
+            var TenDayPredict = new ThreeTempIntervalStamps(nextRandTemp(), nextRandTemp(), nextRandTemp());
 
             return new DayliObservation(realTemp, TomorrowPredict, ThreeDayPredict, SevenDayPredict, TenDayPredict);
 

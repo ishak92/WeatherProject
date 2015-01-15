@@ -17,8 +17,8 @@ namespace TestProject
         {
             var history = new ObservationHistory();
             var initData = new DateTime(2014, 12, 1);
-            var constMistakeWeatherGenerator1 = new ConstantMistakenWeatherProvider(1);
-            var constMistakeWeatherGenerator2 = new ConstantMistakenWeatherProvider(2);
+            var constMistakeWeatherGenerator1 = new ConstantMistakenAndConstantRangeWeatherProvider(1);
+            var constMistakeWeatherGenerator2 = new ConstantMistakenAndConstantRangeWeatherProvider(2);
 
             for (int i = 0; i < 20; i=i+2)
             {

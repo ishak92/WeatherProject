@@ -7,38 +7,38 @@ namespace HistoryOfObservations
 {
     public class DayliObservation
     {
-        private ThreeTempStamps realTempOfADay;
-        private ThreeTempStamps TomorrowTempPrediction;
-        private ThreeTempStamps ThreeDayTempPrediction;
-        private ThreeTempStamps SevenDayTempPrediction;
-        private ThreeTempStamps TenDayTempPrediction;
+        private ThreeTempStamps _realTempOfADay;
+        private ThreeTempIntervalStamps _tomorrowTempIntervalPrediction;
+        private ThreeTempIntervalStamps _threeDayTempIntervalPrediction;
+        private ThreeTempIntervalStamps _sevenDayTempIntervalPrediction;
+        private ThreeTempIntervalStamps _tenDayTempIntervalPrediction;
 
-        public DayliObservation(ThreeTempStamps realTemp, ThreeTempStamps tomorrowPredict, ThreeTempStamps threeDayPredict, ThreeTempStamps sevenDayPredict, ThreeTempStamps tenDayPredict)
+        public DayliObservation(ThreeTempStamps realTempInterval, ThreeTempIntervalStamps tomorrowPredict, ThreeTempIntervalStamps threeDayPredict, ThreeTempIntervalStamps sevenDayPredict, ThreeTempIntervalStamps tenDayPredict)
         {
-            realTempOfADay = realTemp;
-            TomorrowTempPrediction = tomorrowPredict;
-            ThreeDayTempPrediction = threeDayPredict;
-            SevenDayTempPrediction = sevenDayPredict;
-            TenDayTempPrediction = tenDayPredict;
+            _realTempOfADay = realTempInterval;
+            _tomorrowTempIntervalPrediction = tomorrowPredict;
+            _threeDayTempIntervalPrediction = threeDayPredict;
+            _sevenDayTempIntervalPrediction = sevenDayPredict;
+            _tenDayTempIntervalPrediction = tenDayPredict;
         }
 
         public int GetRealTempOfNoon()
         {
-            return realTempOfADay.NoonTemp;
+            return _realTempOfADay.noonTemp;
         }
 
-        public int GetPrediction(int numberOfDays)
+        public TempInterval GetPrediction(int numberOfDays)
         {
             switch (numberOfDays)
             {
                 case 1:
-                    return TomorrowTempPrediction.NoonTemp;
+                    return _tomorrowTempIntervalPrediction.NoonTemp;
                 case 3:
-                    return ThreeDayTempPrediction.NoonTemp;
+                    return _threeDayTempIntervalPrediction.NoonTemp;
                 case 7:
-                    return SevenDayTempPrediction.NoonTemp;
+                    return _sevenDayTempIntervalPrediction.NoonTemp;
                 case 10:
-                    return TenDayTempPrediction.NoonTemp;
+                    return _tenDayTempIntervalPrediction.NoonTemp;
             }
             throw new NoPredictionsForThisPeriod(numberOfDays);
 

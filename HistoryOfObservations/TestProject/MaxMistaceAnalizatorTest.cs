@@ -75,7 +75,7 @@ namespace TestProject
         {
             var history = new ObservationHistory();
             var initData = new DateTime(2014, 12, 1);
-            var constMistakeWeatherGenerator = new ConstantMistakenWeatherProvider(5);
+            var constMistakeWeatherGenerator = new ConstantMistakenAndConstantRangeWeatherProvider(5);
             for (int i = 0; i < 12; i++)
             {
                 history.AddObservation(initData.AddDays((i)), constMistakeWeatherGenerator.GetDayliObservation());

@@ -7,18 +7,16 @@ namespace HistoryOfObservations
 {
     public class ThreeTempStamps
     {
-        public TempInterval MorningTemp ;
-        public TempInterval NoonTemp;
-        public TempInterval EveningTemp;
+        public int morningTemp;
+        public int noonTemp;
+        public int eveningTemp;
 
-        public ThreeTempStamps(TempInterval morningTemp, TempInterval noonTemp, TempInterval eveningTemp)
+
+        public ThreeTempStamps(int morningTemp, int noonTemp, int eveningTemp)
         {
-            MorningTemp = morningTemp;
-            NoonTemp = noonTemp;
-            EveningTemp = eveningTemp;
-
-
+            this.morningTemp = morningTemp;
+            this.noonTemp = noonTemp;
+            this.eveningTemp = eveningTemp;
         }
-
     }
 }

@@ -35,7 +35,7 @@ namespace HistoryOfObservations
                 throw new NoSuchDayInHistoryException();
         }
 
-        public int getPredictedTemp(DateTime predictionDate, int numberOfDays)
+        public TempInterval getPredictedTemp(DateTime predictionDate, int numberOfDays)
         {
             if (history.ContainsKey(predictionDate.Date))
                 return history[predictionDate.Date].GetPrediction(numberOfDays);

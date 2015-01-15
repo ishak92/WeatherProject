@@ -71,42 +71,47 @@ namespace HistoryOfObservations.Providers
 
         }
 
-        ThreeTempStamps getTempOfADayFromTempTagCollection(HtmlNodeCollection tempTagCollection, int dayNum)
+        ThreeTempIntervalStamps getTempOfADayFromTempTagCollection(HtmlNodeCollection tempTagCollection, int dayNum)
         {
 
-            int morningTem = getTempFromYandexTempHtmlNode(tempTagCollection[dayNum*4]);
-            int noonTemp = getTempFromYandexTempHtmlNode(tempTagCollection[dayNum * 4 +1]); ;
-            int eveningTemp = getTempFromYandexTempHtmlNode(tempTagCollection[dayNum * 4 +2 ]); ;
+            var morningTem = getTempIntervFromYandexTempHtmlNode(tempTagCollection[dayNum*4]);
+            var noonTemp = getTempIntervFromYandexTempHtmlNode(tempTagCollection[dayNum * 4 +1]); ;
+            var eveningTemp = getTempIntervFromYandexTempHtmlNode(tempTagCollection[dayNum * 4 +2 ]); ;
 
 
-            return new ThreeTempStamps(morningTem, noonTemp, eveningTemp);
+            return new ThreeTempIntervalStamps(morningTem, noonTemp, eveningTemp);
         }
 
-        int getTempFromYandexTempHtmlNode(HtmlNode node)
+        TempInterval getTempIntervFromYandexTempHtmlNode(HtmlNode node)
         {
             float tempF;
+            
+            var lowTempString = node.InnerText.Split('…')[0];
+            var highTempString = node.InnerText.Split('…')[1];
+
+            return new TempInterval(getTempFromYandexTempString(lowTempString), getTempFromYandexTempString(highTempString));
+        }
+
+        int getTempFromYandexTempString(string tempString)
+        {
             int sign = 1;
-
-            var TempString = node.InnerText.Replace("…", " ");
-            TempString = TempString.Split(' ')[0];
-
-            if (TempString[0] == '−')
+            if (tempString[0] == '−')
             {
                 sign = -1;
-                TempString = TempString.Substring(1);
+                tempString = tempString.Substring(1);
             }
-            if (TempString[0] == '+')
+
+            if (tempString[0] == '+')
             {
                 sign = 1;
-                TempString = TempString.Substring(1);
-                
+                tempString = tempString.Substring(1);
             }
-            
-            tempF = float.Parse(TempString, NumberStyles.Number);
-            
-            tempF = tempF*sign;
-            tempF++;
+
+            var tempF = float.Parse(tempString, NumberStyles.Number);
+
+            tempF = tempF * sign;
             return (int)tempF;
+
         }
     }
 }
