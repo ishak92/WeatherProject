@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using HistoryOfObservations;
 using HistoryOfObservations.Analytics;
@@ -17,8 +18,8 @@ namespace TestProject
         {
             var history = new ObservationHistory();
             var initData = new DateTime(2014, 12, 1);
-            var constMistakeWeatherGenerator1 = new ConstantMistakenAndConstantRangeWeatherProvider(1);
-            var constMistakeWeatherGenerator2 = new ConstantMistakenAndConstantRangeWeatherProvider(2);
+            var constMistakeWeatherGenerator1 = new ConstantMistakenAndConstantRangeWeatherProvider(1, 2);  //тут фича, если дать ширину интервала нечетную, то границы интервала не удается сделать корректными,
+            var constMistakeWeatherGenerator2 = new ConstantMistakenAndConstantRangeWeatherProvider(2 , 2); // так как они целое число, менять ради теста реализацию бессмысленно, ибо реальные пргнозы всегда целые
 
             for (int i = 0; i < 20; i=i+2)
             {
@@ -37,14 +38,19 @@ namespace TestProject
         [TestMethod]
         public void YandexProviderTest()
         {
-            var provider = new YandexWeatherProvider("file:///C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestData/Yandex/Day1/1.html");
+            //var provider = new YandexWeatherProvider("file:///C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestData/Yandex/Day1/1.html");
+
+            var curDir = Directory.GetCurrentDirectory();
+            curDir += "\\..\\..\\..\\TestData\\Yandex\\Day1\\1.html";
+            var provider = new YandexWeatherProvider(curDir);
+            
             var dayliObs = provider.GetDayliObservation();
 
-            Assert.AreEqual(dayliObs.GetRealTempOfNoon(), -1);
-            Assert.AreEqual(dayliObs.GetPrediction(1), -1);
-            Assert.AreEqual(dayliObs.GetPrediction(3), 0);
-            Assert.AreEqual(dayliObs.GetPrediction(7), -2);
-            Assert.AreEqual(dayliObs.GetPrediction(10), -5);
+            Assert.AreEqual(-1.5, dayliObs.GetRealTempOfNoon());
+            Assert.AreEqual(0.5, dayliObs.GetPrediction(1).GetCenterOfInterval());
+            Assert.AreEqual(0, dayliObs.GetPrediction(3).GetCenterOfInterval());
+            Assert.AreEqual(-2.5, dayliObs.GetPrediction(7).GetCenterOfInterval());
+            Assert.AreEqual(-5, dayliObs.GetPrediction(10).GetCenterOfInterval());
 
 
         }

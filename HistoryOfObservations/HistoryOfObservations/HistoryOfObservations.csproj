@@ -51,7 +51,6 @@
     <Compile Include="DayliObservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ConstantMistakenAndConstantRangeWeatherProvider.cs" />
-    <Compile Include="Providers\RandomWeatherProvider.cs" />
     <Compile Include="Providers\YandexWeatherProvider.cs" />
     <Compile Include="TempInterval.cs" />
     <Compile Include="ThreeTempIntervalStamps.cs" />

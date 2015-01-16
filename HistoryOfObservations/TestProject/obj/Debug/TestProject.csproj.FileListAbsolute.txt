@@ -7,3 +7,6 @@ C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObserv
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HistoryOfObservations_Accessor.pdb
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.dll
 C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\obj\Debug\TestProject.pdb
+C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HtmlAgilityPack.dll
+C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\TestProject\bin\Debug\HtmlAgilityPack.xml

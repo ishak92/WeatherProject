@@ -61,7 +61,7 @@ namespace HistoryOfObservations.Providers
             HtmlNodeCollection NodesWithTemp = doc.DocumentNode.SelectNodes(".//*[@class='temp']");
 
 
-            var realTemp = getTempOfADayFromTempTagCollection(NodesWithTemp, 0);
+            var realTemp = getTempOfADayFromTempTagCollection(NodesWithTemp, 0).getThreeTempStampsCenterOfInterval(); // TODO: tut konechno obman luche brat 3 raza v den odno chislo i vse takoye.. no ne seychas
             var oneDayPred = getTempOfADayFromTempTagCollection(NodesWithTemp, 1);
             var threeDayPred = getTempOfADayFromTempTagCollection(NodesWithTemp, 3);
             var sevenDayPred = getTempOfADayFromTempTagCollection(NodesWithTemp, 7);

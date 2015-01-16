@@ -13,15 +13,15 @@ namespace HistoryOfObservations.Analytics
 
         public double GetMistakeExpectedValue(int NumberOfDays)
         {
-            Dictionary<int, int> MistakeRandomValue = new Dictionary<int, int>();
+            Dictionary<double, int> MistakeRandomValue = new Dictionary<double, int>();
             var predictionDate = History.GetFirstDate();
             var predictedDate = predictionDate.AddDays(NumberOfDays);
 
             while (History.Contain(predictedDate))
             {
                 var realTemp = History.getRealTempOfday(predictedDate);
-                var predictedTemp = History.getPredictedTemp(predictionDate, NumberOfDays);
-                var mistake = Math.Abs(predictedTemp - realTemp);
+                var predictedTempInterval = History.getPredictedTemp(predictionDate, NumberOfDays);
+                var mistake = Math.Abs(predictedTempInterval.GetCenterOfInterval() - realTemp);
                 if (MistakeRandomValue.ContainsKey(mistake))
                     MistakeRandomValue[mistake]++;
                 else
@@ -33,7 +33,7 @@ namespace HistoryOfObservations.Analytics
             return GetExpectedValueOfRandomValue(MistakeRandomValue);
         }
 
-        double GetExpectedValueOfRandomValue(Dictionary<int, int> MistakeRandomValue)
+        double GetExpectedValueOfRandomValue(Dictionary<double, int> MistakeRandomValue)
         {
             double ExpectedValue = 0;
             int numberOfExperiments = getNumberOfPredictions(MistakeRandomValue);
@@ -44,7 +44,7 @@ namespace HistoryOfObservations.Analytics
             return ExpectedValue;
         }
 
-        int getNumberOfPredictions(Dictionary<int, int> MistakeRandomValue)
+        int getNumberOfPredictions(Dictionary<double, int> MistakeRandomValue)
         {
             int count = 0;
             foreach (var mist in MistakeRandomValue.Values)

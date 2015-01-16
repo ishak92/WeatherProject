@@ -22,7 +22,7 @@ namespace HistoryOfObservations
             _tenDayTempIntervalPrediction = tenDayPredict;
         }
 
-        public int GetRealTempOfNoon()
+        public double GetRealTempOfNoon()
         {
             return _realTempOfADay.noonTemp;
         }

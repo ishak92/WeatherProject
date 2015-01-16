@@ -20,5 +20,10 @@ namespace HistoryOfObservations
 
         }
 
+        public ThreeTempStamps getThreeTempStampsCenterOfInterval()
+        {
+            return new ThreeTempStamps(MorningTemp.GetCenterOfInterval(),NoonTemp.GetCenterOfInterval(), EveningTemp.GetCenterOfInterval() );
+        }
+
     }
 }

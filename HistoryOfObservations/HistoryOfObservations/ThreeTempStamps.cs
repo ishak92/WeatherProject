@@ -7,12 +7,12 @@ namespace HistoryOfObservations
 {
     public class ThreeTempStamps
     {
-        public int morningTemp;
-        public int noonTemp;
-        public int eveningTemp;
+        public double morningTemp;
+        public double noonTemp;
+        public double eveningTemp;
 
 
-        public ThreeTempStamps(int morningTemp, int noonTemp, int eveningTemp)
+        public ThreeTempStamps(double morningTemp, double noonTemp, double eveningTemp)
         {
             this.morningTemp = morningTemp;
             this.noonTemp = noonTemp;
