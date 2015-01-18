@@ -54,5 +54,23 @@ namespace TestProject
 
 
         }
+
+        [TestMethod]
+        public void MailProviderTest()
+        {
+
+
+            var provider = new MailRuWeatherProvider("https://pogoda.mail.ru/prognoz/moskva/14dney/");
+
+            var dayliObs = provider.GetDayliObservation();
+
+            Assert.AreEqual(0, dayliObs.GetRealTempOfNoon());
+            Assert.AreEqual(-3, dayliObs.GetPrediction(1).GetCenterOfInterval());
+            Assert.AreEqual(-16, dayliObs.GetPrediction(3).GetCenterOfInterval());
+            Assert.AreEqual(-13, dayliObs.GetPrediction(7).GetCenterOfInterval());
+            Assert.AreEqual(-12, dayliObs.GetPrediction(10).GetCenterOfInterval());
+
+
+        }
     }
 }

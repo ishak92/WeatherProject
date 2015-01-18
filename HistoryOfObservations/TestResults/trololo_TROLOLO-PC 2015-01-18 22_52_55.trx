@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b923706e-8670-4622-b7f3-7755e5343798" name="trololo@TROLOLO-PC 2015-01-18 22:52:55" runUser="trololo-PC\trololo" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8084e574-4d63-4013-b7c3-116ebeeb94fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="trololo_TROLOLO-PC 2015-01-18 22_52_55">
+      <DeploymentItem filename="C:\Users\trololo\Desktop\ПроектПогода\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HistoryOfObservations.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-01-18T22:52:55.0978255+04:00" queuing="2015-01-18T22:52:55.8538687+04:00" start="2015-01-18T22:52:55.9208726+04:00" finish="2015-01-18T22:52:56.3424828+04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TwoObservationsForOneDateIsNotAllowed" storage="c:\users\trololo\desktop\проектпогода\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="b2dc3992-c018-ce93-e96f-05d349ab5bc8">
+      <Execution id="7c2864eb-ab35-4c38-98cb-e40e86b01509" />
+      <TestMethod codeBase="C:/Users/trololo/Desktop/ПроектПогода/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitWeatherTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TwoObservationsForOneDateIsNotAllowed" />
+    </UnitTest>
+    <UnitTest name="FirstDateOfHistoryTest" storage="c:\users\trololo\desktop\проектпогода\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="787b04a4-a5fe-52b3-942a-743b635cde2e">
+      <Execution id="333611be-ae44-4a3d-a1b9-7a5ea77508a6" />
+      <TestMethod codeBase="C:/Users/trololo/Desktop/ПроектПогода/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitWeatherTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FirstDateOfHistoryTest" />
+    </UnitTest>
+    <UnitTest name="GetMaximumMistaceForNDayPredictionTest" storage="c:\users\trololo\desktop\проектпогода\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="14bfe455-94d5-57a0-5628-918ec4dcc95b">
+      <DeploymentItems>
+        <DeploymentItem filename="HistoryOfObservations.dll" />
+      </DeploymentItems>
+      <Execution id="4b07560b-1df2-4ddc-b89e-a714809ddcb2" />
+      <TestMethod codeBase="C:/Users/trololo/Desktop/ПроектПогода/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MaxMistaceAnalizatorTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMaximumMistaceForNDayPredictionTest" />
+    </UnitTest>
+    <UnitTest name="YandexProviderTest" storage="c:\users\trololo\desktop\проектпогода\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="ab19f450-ec53-6d30-c599-4dfcbd0d6112">
+      <Execution id="a8f6e945-5fe8-48e3-8c35-56247465a6d8" />
+      <TestMethod codeBase="C:/Users/trololo/Desktop/ПроектПогода/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MistakeExpectedValueAnaliserTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="YandexProviderTest" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\users\trololo\desktop\проектпогода\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="9581082c-831d-babe-1bf3-1cd972a5011a">
+      <Execution id="2a72aef8-8e2f-4abd-9662-fdc7ee29c652" />
+      <TestMethod codeBase="C:/Users/trololo/Desktop/ПроектПогода/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MistakeExpectedValueAnaliserTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TwoObservationsForOneDateWithDifferentTimesIsNotAllowed" storage="c:\users\trololo\desktop\проектпогода\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="2b0277b2-aff4-7df5-f768-8bf884f8778a">
+      <Execution id="a1fb758a-6739-45f6-9e2a-27d8e4ffa5f6" />
+      <TestMethod codeBase="C:/Users/trololo/Desktop/ПроектПогода/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitWeatherTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TwoObservationsForOneDateWithDifferentTimesIsNotAllowed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="14bfe455-94d5-57a0-5628-918ec4dcc95b" executionId="4b07560b-1df2-4ddc-b89e-a714809ddcb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b0277b2-aff4-7df5-f768-8bf884f8778a" executionId="a1fb758a-6739-45f6-9e2a-27d8e4ffa5f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="787b04a4-a5fe-52b3-942a-743b635cde2e" executionId="333611be-ae44-4a3d-a1b9-7a5ea77508a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9581082c-831d-babe-1bf3-1cd972a5011a" executionId="2a72aef8-8e2f-4abd-9662-fdc7ee29c652" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab19f450-ec53-6d30-c599-4dfcbd0d6112" executionId="a8f6e945-5fe8-48e3-8c35-56247465a6d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2dc3992-c018-ce93-e96f-05d349ab5bc8" executionId="7c2864eb-ab35-4c38-98cb-e40e86b01509" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4b07560b-1df2-4ddc-b89e-a714809ddcb2" testId="14bfe455-94d5-57a0-5628-918ec4dcc95b" testName="GetMaximumMistaceForNDayPredictionTest" computerName="TROLOLO-PC" duration="00:00:00.0260585" startTime="2015-01-18T22:52:55.9288730+04:00" endTime="2015-01-18T22:52:56.1990824+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b07560b-1df2-4ddc-b89e-a714809ddcb2">
+    </UnitTestResult>
+    <UnitTestResult executionId="a1fb758a-6739-45f6-9e2a-27d8e4ffa5f6" testId="2b0277b2-aff4-7df5-f768-8bf884f8778a" testName="TwoObservationsForOneDateWithDifferentTimesIsNotAllowed" computerName="TROLOLO-PC" duration="00:00:00.0033394" startTime="2015-01-18T22:52:56.1990824+04:00" endTime="2015-01-18T22:52:56.2146824+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1fb758a-6739-45f6-9e2a-27d8e4ffa5f6">
+    </UnitTestResult>
+    <UnitTestResult executionId="333611be-ae44-4a3d-a1b9-7a5ea77508a6" testId="787b04a4-a5fe-52b3-942a-743b635cde2e" testName="FirstDateOfHistoryTest" computerName="TROLOLO-PC" duration="00:00:00.0010362" startTime="2015-01-18T22:52:56.2146824+04:00" endTime="2015-01-18T22:52:56.2146824+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="333611be-ae44-4a3d-a1b9-7a5ea77508a6">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a72aef8-8e2f-4abd-9662-fdc7ee29c652" testId="9581082c-831d-babe-1bf3-1cd972a5011a" testName="TestMethod1" computerName="TROLOLO-PC" duration="00:00:00.0079845" startTime="2015-01-18T22:52:56.2146824+04:00" endTime="2015-01-18T22:52:56.2146824+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a72aef8-8e2f-4abd-9662-fdc7ee29c652">
+    </UnitTestResult>
+    <UnitTestResult executionId="a8f6e945-5fe8-48e3-8c35-56247465a6d8" testId="ab19f450-ec53-6d30-c599-4dfcbd0d6112" testName="YandexProviderTest" computerName="TROLOLO-PC" duration="00:00:00.0611687" startTime="2015-01-18T22:52:56.2146824+04:00" endTime="2015-01-18T22:52:56.2926826+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8f6e945-5fe8-48e3-8c35-56247465a6d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c2864eb-ab35-4c38-98cb-e40e86b01509" testId="b2dc3992-c018-ce93-e96f-05d349ab5bc8" testName="TwoObservationsForOneDateIsNotAllowed" computerName="TROLOLO-PC" duration="00:00:00.0007406" startTime="2015-01-18T22:52:56.2926826+04:00" endTime="2015-01-18T22:52:56.2926826+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c2864eb-ab35-4c38-98cb-e40e86b01509">
+    </UnitTestResult>
+  </Results>
+</TestRun>
