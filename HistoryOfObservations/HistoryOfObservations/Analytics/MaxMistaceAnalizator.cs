@@ -11,9 +11,9 @@ namespace HistoryOfObservations.Analytics
         {
         }
 
-        public int GetMaximumMistaceForNDayPrediction(int numberOfDays)
+        public double GetMaximumMistaceForNDayPrediction(int numberOfDays)
         {
-            int maxMist = 0;
+            var maxMist = 0.0;
             var predictionDate = History.GetFirstDate();
             var predictedDate = predictionDate.AddDays(numberOfDays);
 
@@ -21,7 +21,7 @@ namespace HistoryOfObservations.Analytics
             {
                 var realTemp = History.getRealTempOfday(predictedDate);
                 var predictedTemp = History.getPredictedTemp(predictionDate, numberOfDays);
-                var mistake = Math.Abs(predictedTemp - realTemp);
+                var mistake = Math.Abs(predictedTemp.GetCenterOfInterval() - realTemp);
                 if (mistake > maxMist)
                     maxMist = mistake;
                 predictedDate =  predictedDate.AddDays(1);

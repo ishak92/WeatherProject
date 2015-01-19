@@ -16,7 +16,7 @@ namespace TestProject
         public void TwoObservationsForOneDateIsNotAllowed()
         {
             var hist = new ObservationHistory();
-            var randomProvider = new RandomWeatherProvider(30);
+            var randomProvider = new ConstantMistakenAndConstantRangeWeatherProvider(5, 5);
             hist.AddObservation(new DateTime(2014,12,1), randomProvider.GetDayliObservation() );
             hist.AddObservation(new DateTime(2014, 12, 1), randomProvider.GetDayliObservation());
             
@@ -27,7 +27,7 @@ namespace TestProject
         public void TwoObservationsForOneDateWithDifferentTimesIsNotAllowed()
         {
             var hist = new ObservationHistory();
-            var randomProvider = new RandomWeatherProvider(30);
+            var randomProvider = new ConstantMistakenAndConstantRangeWeatherProvider(5, 5);
             hist.AddObservation(new DateTime(2014, 12, 1), randomProvider.GetDayliObservation());
             hist.AddObservation(new DateTime(2014, 12, 1, 12, 12, 12), randomProvider.GetDayliObservation());
 
@@ -37,7 +37,7 @@ namespace TestProject
         public void FirstDateOfHistoryTest()
         {
             var hist = new ObservationHistory();
-            var randomProvider = new RandomWeatherProvider(30);
+            var randomProvider = new ConstantMistakenAndConstantRangeWeatherProvider(5, 5);
             hist.AddObservation(new DateTime(2014, 12, 1), randomProvider.GetDayliObservation());
             hist.AddObservation(new DateTime(2014, 12, 2), randomProvider.GetDayliObservation());
             hist.AddObservation(new DateTime(2014, 11, 29), randomProvider.GetDayliObservation());

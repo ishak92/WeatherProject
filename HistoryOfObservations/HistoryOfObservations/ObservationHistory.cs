@@ -27,7 +27,7 @@ namespace HistoryOfObservations
             return history.Keys.Min();
         }
 
-        public int getRealTempOfday(DateTime day)
+        public double getRealTempOfday(DateTime day)
         {
             if (history.ContainsKey(day.Date))
                 return history[day.Date].GetRealTempOfNoon();

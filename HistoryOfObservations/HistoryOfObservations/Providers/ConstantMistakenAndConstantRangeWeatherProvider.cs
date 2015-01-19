@@ -34,7 +34,7 @@ namespace HistoryOfObservations.Providers
         public TempInterval createTempIntervalWithCentrRangeAndMistake(int centr, int range, int mistake)
         {
             var centerOfInterval = centr + mistake;
-            return new TempInterval(centerOfInterval - range / 2, centerOfInterval - range / 2);
+            return new TempInterval(centerOfInterval - range / 2, centerOfInterval + range / 2);
         }
     }
 }

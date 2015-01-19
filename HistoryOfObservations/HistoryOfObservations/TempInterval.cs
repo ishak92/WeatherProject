@@ -21,9 +21,10 @@ namespace HistoryOfObservations
             return high - low;
         }
 
-        double GetMidleOfInterval()
+        public double GetCenterOfInterval()
         {
             return (low + high)/2.0;
         }
+
     }
 }
