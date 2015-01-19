@@ -73,7 +73,7 @@ namespace TestProject
         [DeploymentItem("HistoryOfObservations.dll")]
         public void GetMaximumMistaceForNDayPredictionTest()
         {
-            var history = new ObservationHistory();
+            var history = new ObservationHistory("test observation");
             var initData = new DateTime(2014, 12, 1);
             var constMistakeWeatherGenerator = new ConstantMistakenAndConstantRangeWeatherProvider(5 , 5);
             for (int i = 0; i < 12; i++)

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace HistoryOfObservations
 {
-    public class ThreeTempIntervalStamps
+    [Serializable()]
+    public class ThreeTempIntervalStamps:ISerializable
     {
         public TempInterval MorningTemp ;
         public TempInterval NoonTemp;
@@ -25,5 +27,19 @@ namespace HistoryOfObservations
             return new ThreeTempStamps(MorningTemp.GetCenterOfInterval(),NoonTemp.GetCenterOfInterval(), EveningTemp.GetCenterOfInterval() );
         }
 
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("MorningTemp", MorningTemp);
+            info.AddValue("NoonTemp", NoonTemp);
+            info.AddValue("EveningTemp", EveningTemp);
+
+        }
+
+        public ThreeTempIntervalStamps(SerializationInfo info, StreamingContext context)
+        {
+            MorningTemp = (TempInterval) info.GetValue("MorningTemp", typeof (TempInterval));
+            NoonTemp = (TempInterval)info.GetValue("NoonTemp", typeof(TempInterval));
+            EveningTemp = (TempInterval)info.GetValue("EveningTemp", typeof(TempInterval));
+        }
     }
 }

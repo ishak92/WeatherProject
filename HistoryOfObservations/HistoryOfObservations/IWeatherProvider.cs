@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HistoryOfObservations
 {
-    interface IWeatherProvider
+    public interface IWeatherProvider
     {
         DayliObservation GetDayliObservation();
     }

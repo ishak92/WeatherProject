@@ -10,7 +10,7 @@ using HtmlAgilityPack;
 
 namespace HistoryOfObservations.Providers
 {
-    class YandexWeatherProvider:IWeatherProvider
+    public class YandexWeatherProvider:IWeatherProvider
     {
 
         private string YandexWeatherURL;
@@ -84,7 +84,6 @@ namespace HistoryOfObservations.Providers
 
         TempInterval getTempIntervFromYandexTempHtmlNode(HtmlNode node)
         {
-            float tempF;
             
             var lowTempString = node.InnerText.Split('…')[0];
             var highTempString = node.InnerText.Split('…')[1];

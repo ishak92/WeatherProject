@@ -1,0 +1,11 @@
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\SerializationTest.exe.config
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\SerializationTest.exe
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\SerializationTest.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\HistoryOfObservations.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\HistoryOfObservations.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\obj\x86\Debug\SerializationTest.csprojResolveAssemblyReference.cache
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\obj\x86\Debug\SerializationTest.exe
+C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\SerializationTest\obj\x86\Debug\SerializationTest.pdb

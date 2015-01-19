@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace HistoryOfObservations
 {
-    public class TempInterval
+    [Serializable()]
+    public class TempInterval:ISerializable
     {
         public int low;
         public int high;
@@ -26,5 +28,16 @@ namespace HistoryOfObservations
             return (low + high)/2.0;
         }
 
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("low", low);
+            info.AddValue("high", high);
+        }
+
+        public TempInterval(SerializationInfo info, StreamingContext context)
+        {
+            low = (int) info.GetValue("low", typeof(int));
+            high = (int) info.GetValue("high", typeof(int));
+        }
     }
 }

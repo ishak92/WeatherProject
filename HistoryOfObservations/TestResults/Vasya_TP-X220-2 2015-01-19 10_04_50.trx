@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e066ba37-e24e-4350-8ff8-c1b0cf240840" name="Vasya@TP-X220-2 2015-01-19 10:04:50" runUser="TP-X220-2\Vasya" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8084e574-4d63-4013-b7c3-116ebeeb94fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Vasya_TP-X220-2 2015-01-19 10_04_50">
+      <DeploymentItem filename="C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\HistoryOfObservations\bin\Debug\HistoryOfObservations.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-01-19T10:04:50.2780626+03:00" queuing="2015-01-19T10:04:50.8396636+03:00" start="2015-01-19T10:04:50.8708637+03:00" finish="2015-01-19T10:05:05.9609441+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="6" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TwoObservationsForOneDateIsNotAllowed" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="b2dc3992-c018-ce93-e96f-05d349ab5bc8">
+      <Execution id="318bc9b8-1d7a-441d-9848-0c9f1a64457d" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitWeatherTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TwoObservationsForOneDateIsNotAllowed" />
+    </UnitTest>
+    <UnitTest name="FirstDateOfHistoryTest" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="787b04a4-a5fe-52b3-942a-743b635cde2e">
+      <Execution id="becb20f1-a678-45d4-acb0-127b4f07f612" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitWeatherTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FirstDateOfHistoryTest" />
+    </UnitTest>
+    <UnitTest name="MailProviderTest" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="8ce59ba4-54da-1eab-17ec-b36ff8ae2a48">
+      <Execution id="d97cebb1-250a-4979-aa54-53b125cc6a1e" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MistakeExpectedValueAnaliserTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MailProviderTest" />
+    </UnitTest>
+    <UnitTest name="GetMaximumMistaceForNDayPredictionTest" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="14bfe455-94d5-57a0-5628-918ec4dcc95b">
+      <DeploymentItems>
+        <DeploymentItem filename="HistoryOfObservations.dll" />
+      </DeploymentItems>
+      <Execution id="6cc86683-5831-44e1-8573-c14ae51dbfe0" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MaxMistaceAnalizatorTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMaximumMistaceForNDayPredictionTest" />
+    </UnitTest>
+    <UnitTest name="YandexProviderTest" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="ab19f450-ec53-6d30-c599-4dfcbd0d6112">
+      <Execution id="37c85b69-59dd-4800-beb9-382a4385e359" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MistakeExpectedValueAnaliserTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="YandexProviderTest" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="9581082c-831d-babe-1bf3-1cd972a5011a">
+      <Execution id="74a8191a-adde-46f6-bd6a-7b0210d1b21b" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.MistakeExpectedValueAnaliserTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TwoObservationsForOneDateWithDifferentTimesIsNotAllowed" storage="c:\users\vasya\desktop\gitweatherproject\weatherproject\historyofobservations\testproject\bin\debug\testproject.dll" id="2b0277b2-aff4-7df5-f768-8bf884f8778a">
+      <Execution id="72fef542-2861-4daf-acc8-d2171dbc67e3" />
+      <TestMethod codeBase="C:/Users/Vasya/Desktop/GitWeatherProject/WeatherProject/HistoryOfObservations/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitWeatherTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TwoObservationsForOneDateWithDifferentTimesIsNotAllowed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="14bfe455-94d5-57a0-5628-918ec4dcc95b" executionId="6cc86683-5831-44e1-8573-c14ae51dbfe0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b0277b2-aff4-7df5-f768-8bf884f8778a" executionId="72fef542-2861-4daf-acc8-d2171dbc67e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="787b04a4-a5fe-52b3-942a-743b635cde2e" executionId="becb20f1-a678-45d4-acb0-127b4f07f612" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ce59ba4-54da-1eab-17ec-b36ff8ae2a48" executionId="d97cebb1-250a-4979-aa54-53b125cc6a1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9581082c-831d-babe-1bf3-1cd972a5011a" executionId="74a8191a-adde-46f6-bd6a-7b0210d1b21b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab19f450-ec53-6d30-c599-4dfcbd0d6112" executionId="37c85b69-59dd-4800-beb9-382a4385e359" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2dc3992-c018-ce93-e96f-05d349ab5bc8" executionId="318bc9b8-1d7a-441d-9848-0c9f1a64457d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6cc86683-5831-44e1-8573-c14ae51dbfe0" testId="14bfe455-94d5-57a0-5628-918ec4dcc95b" testName="GetMaximumMistaceForNDayPredictionTest" computerName="TP-X220-2" duration="00:00:00.0199330" startTime="2015-01-19T10:04:50.8864637+03:00" endTime="2015-01-19T10:04:51.0892641+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cc86683-5831-44e1-8573-c14ae51dbfe0">
+    </UnitTestResult>
+    <UnitTestResult executionId="72fef542-2861-4daf-acc8-d2171dbc67e3" testId="2b0277b2-aff4-7df5-f768-8bf884f8778a" testName="TwoObservationsForOneDateWithDifferentTimesIsNotAllowed" computerName="TP-X220-2" duration="00:00:00.0048846" startTime="2015-01-19T10:04:51.0892641+03:00" endTime="2015-01-19T10:04:51.0892641+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72fef542-2861-4daf-acc8-d2171dbc67e3">
+    </UnitTestResult>
+    <UnitTestResult executionId="becb20f1-a678-45d4-acb0-127b4f07f612" testId="787b04a4-a5fe-52b3-942a-743b635cde2e" testName="FirstDateOfHistoryTest" computerName="TP-X220-2" duration="00:00:00.0008111" startTime="2015-01-19T10:04:51.0892641+03:00" endTime="2015-01-19T10:04:51.0892641+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="becb20f1-a678-45d4-acb0-127b4f07f612">
+    </UnitTestResult>
+    <UnitTestResult executionId="d97cebb1-250a-4979-aa54-53b125cc6a1e" testId="8ce59ba4-54da-1eab-17ec-b36ff8ae2a48" testName="MailProviderTest" computerName="TP-X220-2" duration="00:00:14.8118691" startTime="2015-01-19T10:04:51.0892641+03:00" endTime="2015-01-19T10:05:05.9141440+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d97cebb1-250a-4979-aa54-53b125cc6a1e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;-3&gt;. </Message>
+          <StackTrace>   at TestProject.MistakeExpectedValueAnaliserTest.MailProviderTest() in C:\Users\Vasya\Desktop\GitWeatherProject\WeatherProject\HistoryOfObservations\TestProject\MistakeExpectedValueAnaliserTest.cs:line 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="74a8191a-adde-46f6-bd6a-7b0210d1b21b" testId="9581082c-831d-babe-1bf3-1cd972a5011a" testName="TestMethod1" computerName="TP-X220-2" duration="00:00:00.0083207" startTime="2015-01-19T10:05:05.9141440+03:00" endTime="2015-01-19T10:05:05.9297440+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74a8191a-adde-46f6-bd6a-7b0210d1b21b">
+    </UnitTestResult>
+    <UnitTestResult executionId="37c85b69-59dd-4800-beb9-382a4385e359" testId="ab19f450-ec53-6d30-c599-4dfcbd0d6112" testName="YandexProviderTest" computerName="TP-X220-2" duration="00:00:00.0118017" startTime="2015-01-19T10:05:05.9297440+03:00" endTime="2015-01-19T10:05:05.9453440+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37c85b69-59dd-4800-beb9-382a4385e359">
+    </UnitTestResult>
+    <UnitTestResult executionId="318bc9b8-1d7a-441d-9848-0c9f1a64457d" testId="b2dc3992-c018-ce93-e96f-05d349ab5bc8" testName="TwoObservationsForOneDateIsNotAllowed" computerName="TP-X220-2" duration="00:00:00.0007712" startTime="2015-01-19T10:05:05.9453440+03:00" endTime="2015-01-19T10:05:05.9453440+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="318bc9b8-1d7a-441d-9848-0c9f1a64457d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

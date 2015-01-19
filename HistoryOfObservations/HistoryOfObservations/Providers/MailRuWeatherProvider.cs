@@ -9,7 +9,7 @@ using HtmlAgilityPack;
 
 namespace HistoryOfObservations.Providers
 {
-    class MailRuWeatherProvider : IWeatherProvider
+    public class MailRuWeatherProvider : IWeatherProvider
     {
         private string MailWeatherURL;
 
@@ -57,7 +57,7 @@ namespace HistoryOfObservations.Providers
                 tempString = tempString.Substring(1);
             }
 
-            tempString = tempString.Split('&')[0];  //TODO: fix govnocode
+            tempString = tempString.Split('°')[0].Split('&')[0];  //TODO: fix govnocode
             int tempF = (int) float.Parse(tempString, NumberStyles.Number);
 
             tempF = tempF * sign;
